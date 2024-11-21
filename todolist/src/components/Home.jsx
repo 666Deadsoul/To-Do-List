@@ -8,6 +8,11 @@ const Home=()=>{
             <div className="container">
                 <h1>To-Do-List</h1>
                 <TaskInput/>
+                <div className="todolist">
+                    <span>To Do</span>
+                    <ul className="list-items"></ul>
+                </div>
+
             </div>
         </>
     );

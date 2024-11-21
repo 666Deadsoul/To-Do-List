@@ -10,19 +10,37 @@ body{
     background-color: var(--third);
 }
 .container{
-    width:400px;
-    background-color: var(--main-color);
+    width:350px;
+    background-color: rgb(4, 4, 90);
     padding: 1rem;
     margin: 5rem auto;
     border-radius: 5px;
 }
 
-.constainer h1{
+.container h1{
     text-align: center;
+    color:white;
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     word-spacing: 5px;
     letter-spacing: 5px;
     padding: 2.4rem 0;
+}
+.inputField{
+    width:100%;
+    background-color:white;
+    padding: 5px 1rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputField input{
+    background: transparent;
+    padding: 10px;
+    font-size: 1rem;
+}
+.inputField input::placeholder{
+    color:rgb(161, 160, 160);
 }

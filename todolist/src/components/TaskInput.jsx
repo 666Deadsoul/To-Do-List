@@ -4,6 +4,8 @@ import "./taskinp.css";
 const TaskInput =()=>{
 
     const [task, setTask] = useState('');
+    console.log(task);
+
     function handleInputValue(event){
         setTask(event.target.value);
     }

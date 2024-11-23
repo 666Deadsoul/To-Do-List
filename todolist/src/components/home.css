@@ -44,3 +44,6 @@ body{
 .inputField input::placeholder{
     color:rgb(161, 160, 160);
 }
+.todolist{
+    color:white;
+}

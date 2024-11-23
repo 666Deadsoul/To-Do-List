@@ -77,10 +77,11 @@ button:hover{
     flex-direction: column;
     gap: 10px;
 }
-.list-items .items{
+.items{
     background-color: white;
     border-radius: 10px;
-    padding: 14px;
+    padding: 10px;
+    margin-top:10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,5 +92,7 @@ input[type='checkbox']{
     cursor: pointer;
 }
 .items-text{
-    
+    display:flex;
+    align-items: center;
+    gap:15px;
 }

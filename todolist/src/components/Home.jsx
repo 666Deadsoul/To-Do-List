@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import TaskInput from "./TaskInput";
 import './home.css';
+import TaskItem from "./TaskItem";
 
 const Home=()=>{
-    const [todolist, setTodolist] = useState([]);
+    const [todoList, setTodolist] = useState([]);
     const addTask = (taskName)=>{
         const newTask = {taskName, checked: false};
-        setTodolist([...todolist,newTask])
+        setTodolist([...todoList,newTask])
     };
-    console.log(todolist);
+    console.log(todoList);
 
     return(
         <>
@@ -18,6 +19,9 @@ const Home=()=>{
                 <div className="todolist">
                     <span>To Do</span>
                     <ul className="list-items"></ul>
+                        {todoList.map((item)=>(
+                            <TaskItem/>
+                        ))}
                 </div>
 
             </div>

@@ -11,12 +11,15 @@ const TaskInput =({addTask})=>{
     }
     function handleAddTask(event){
         event.preventDefault();
+        if(task.trim()=== '') return;
+        event.preventDefault();
         addTask(task);
+        setTask('');   
     }
     return(
         <>
             <form className="inputField" onSubmit={handleAddTask}>
-                <input type="text" placeholder="Add Item" onChange={handleInputValue}/>
+                <input type="text" value={task} placeholder="Add Item" onChange={handleInputValue}/>
                 <button>+</button>
             </form>
         </>

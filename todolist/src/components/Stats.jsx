@@ -3,9 +3,9 @@ import React from 'react'
 const Stats = ({todoList}) => {
     let countLeft = todoList.length;
   return (
-    <div className="notify">
+    <div className="stats">
       {countLeft == 0? "You got everything! Yeppieee..": `You have
-      ${countLeft} on your list.`}
+      ${countLeft} task on your list.`}
     </div>
   )
 }

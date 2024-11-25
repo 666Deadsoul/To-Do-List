@@ -96,6 +96,10 @@ input[type='checkbox']{
     align-items: center;
     gap:15px;
 }
+.items-text div {
+    color: red;
+    overflow: hidden;
+  }
 .delete_icon{
     cursor: pointer;
 }

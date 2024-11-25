@@ -96,3 +96,6 @@ input[type='checkbox']{
     align-items: center;
     gap:15px;
 }
+.delete_icon{
+    cursor: pointer;
+}

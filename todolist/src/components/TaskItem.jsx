@@ -1,7 +1,7 @@
 import React from 'react'
+import {FaTrash as Trash} from "react-icons/fa";
 
-
-const TaskItem = ({task}) => {
+const TaskItem = ({task, deleteTask}) => {
   return (
     <>
         <li className="items">
@@ -9,7 +9,7 @@ const TaskItem = ({task}) => {
                 <input type="checkbox" />
                 <p>{task.taskName}</p>
             </div>
-            <a className="delete_icon">Delete</a>
+            <Trash className="delete_icon" onClick={()=> deleteTask(task.taskName)}/>
         </li>
     </>
   )

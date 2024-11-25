@@ -10,6 +10,10 @@ const Home=()=>{
         setTodolist([...todoList,newTask])
     };
     console.log(todoList);
+    
+    function deleteTask(deleteTaskName){
+        setTodolist(todoList.filter(task=>task.taskName !== deleteTaskName));
+    }
 
     return(
         <>
@@ -18,10 +22,13 @@ const Home=()=>{
                 <TaskInput addTask={addTask}/>
                 <div className="todolist">
                     <span>To Do</span>
-                    <ul className="list-items"></ul>
+                    <ul className="list-items">
                         {todoList.map((task, key)=>(
-                            <TaskItem task={task} key={key}/>
+                            <TaskItem task={task} key={key}
+                            deleteTask = {deleteTask}/>
                         ))}
+                    </ul>
+                    {todoList.length === 0? (<p className="notify">You are done!</p>) : null}
                 </div>
 
             </div>

@@ -19,8 +19,8 @@ const Home=()=>{
                 <div className="todolist">
                     <span>To Do</span>
                     <ul className="list-items"></ul>
-                        {todoList.map((item)=>(
-                            <TaskItem/>
+                        {todoList.map((task, key)=>(
+                            <TaskItem task={task} key={key}/>
                         ))}
                 </div>
 
